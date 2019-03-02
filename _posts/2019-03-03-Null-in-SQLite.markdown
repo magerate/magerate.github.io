@@ -28,9 +28,9 @@ Detecting the presense or absense of **null** is done using the **is null** or *
 
 Always remember that null is not equal to any other value ,even null itself. You cannot compare null with a value, and no null is greater than, smaller than, or in any way related to any another null.
 
-sqlite> select null is null;
+sqlite> select null is null;  
 1
-sqlite> select null = null;
+sqlite> select null = null;  
 
 
 
