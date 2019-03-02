@@ -30,9 +30,10 @@ Always remember that null is not equal to any other value ,even null itself. You
 
 sqlite> select null is null;  
 1  
+
 sqlite> select null = null;  
   
-  
+
 If you use **null**, you need to take special care in queries that refer to columns that may contain **null**
 in their predicates and aggregates. **null** can do quite a number on aggregates if you are not careful.
 
