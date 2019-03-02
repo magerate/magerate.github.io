@@ -7,7 +7,7 @@ tags: [SQLite]
 ---
 **null** is the absence of a value: **null** is not nothing, **null** is not something, **null** is not true, **null** is not false, **null** is not zero, **null** is not an empty string. Simply put, **null** is resolutely what it is: **null**.  
 
-
+(/assets/AND_and_OR_with NULL.png)
 
 
 
