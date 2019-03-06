@@ -8,6 +8,8 @@ tags: [SQLite]
 
 <!-- TOC -->autoauto- [Principal Concepts](#principal-concepts)auto    - [Connection](#connection)auto    - [Statement](#statement)auto    - [B-tree](#b-tree)auto    - [Pager](#pager)auto- [Core API](#core-api)auto    - [Connecting to a Database](#connecting-to-a-database)auto    - [Executing Prepared Queries](#executing-prepared-queries)auto    - [Using Parameterized SQL](#using-parameterized-sql)auto    - [Executing Wrapped Queries](#executing-wrapped-queries)auto        - [sqlite3_exec()](#sqlite3_exec)auto        - [sqlite3_get_table()](#sqlite3_get_table)autoauto<!-- /TOC -->
 
+
+
 ## Principal Concepts
 
 From a programmer’s point of view, the main things to know about are connections, statements, the B-tree, and the pager.
