@@ -56,7 +56,6 @@ its associated cursor can get to the records inside the page.
 The pager is responsible for reading and writing to and from the database, maintaining a memory cache or pages, and managing transactions. In
 addition to this, it manages locks and crash recovery.
 
-
 ## Core API
 
 ### Connecting to a Database
