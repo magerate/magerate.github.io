@@ -1,19 +1,22 @@
 ---
 layout: post
-title:  "SQLite Design and Concept"
+title:  "SQLite Concepts and Core API"
 date:   2019-03-06 23:37:01 +0800
 categories: [SQLite]
 tags: [SQLite]
 ---
-from a programmer’s point of view, the main things to know about are connections, statements, the B-tree, and the pager.
+
+## Principal Concepts
+
+From a programmer’s point of view, the main things to know about are connections, statements, the B-tree, and the pager.
 
 ![ NULL](/assets/sqlite_api_object_model.png)
 
-## Connection
+### Connection
 
 A connection represents a single connection to a database as well as a single transaction context. In the C API, they correspond directly to the sqlite3
 
-## Statement
+### Statement
 
 Statements are derived from connections. That is, every statement has an associated connection object.
 A statement represents a single compiled SQL statement. Internally, it is expressed in the form of VDBE
@@ -24,14 +27,14 @@ as bound parameters, which are addressed later in the section “Parameter Bindi
 contain many different things, you can simply think of them as cursors with which to iterate through a
 result set, or as opaque handles referencing a single SQL command.
 
-## B-tree
+### B-tree
 
 Each database object has one B-tree object, which in turn has one pager object.
 
 Statements that read the database iterate over B-trees using cursors. Cursors iterate over
 records, and records are stored in pages. As a cursor traverses records, it also traverses pages. 
 
-## Pager
+### Pager
 
 For a cursor to access a page, it must first be loaded from disk into memory. This is the pager’s job. Whenever
 the B-tree needs a particular page in the database, it asks the pager to fetch it from disk. The pager then
