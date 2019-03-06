@@ -6,18 +6,18 @@ categories: [SQLite]
 tags: [SQLite]
 ---
 
-[Principal Concepts](#principal-concepts)auto
-    - [Connection](#connection)auto
-    - [Statement](#statement)auto
-    - [B-tree](#b-tree)auto
-    - [Pager](#pager)auto
-[Core API](#core-api)auto
-    - [Connecting to a Database](#connecting-to-a-database)auto 
-    - [Executing Prepared Queries](#executing-prepared-queries)auto
-    - [Using Parameterized SQL](#using-parameterized-sql)auto
-    - [Executing Wrapped Queries](#executing-wrapped-queries)auto 
-      - - [sqlite3_exec()](#sqlite3_exec)auto 
-      - - [sqlite3_get_table()](#sqlite3_get_table)auto
+[Principal Concepts](#principal-concepts)  
+    - [Connection](#connection)  
+    - [Statement](#statement)  
+    - [B-tree](#b-tree)  
+    - [Pager](#pager)  
+[Core API](#core-api)  
+    - [Connecting to a Database](#connecting-to-a-database)   
+    - [Executing Prepared Queries](#executing-prepared-queries)    
+    - [Using Parameterized SQL](#using-parameterized-sql)  
+    - [Executing Wrapped Queries](#executing-wrapped-queries)   
+      - - [sqlite3_exec()](#sqlite3_exec)   
+      - - [sqlite3_get_table()](#sqlite3_get_table)  
 
 ## Principal Concepts
 
