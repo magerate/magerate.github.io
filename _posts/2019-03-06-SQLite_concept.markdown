@@ -5,10 +5,7 @@ date:   2019-03-06 23:37:01 +0800
 categories: [SQLite]
 tags: [SQLite]
 ---
-
 <!-- TOC -->autoauto- [Principal Concepts](#principal-concepts)auto    - [Connection](#connection)auto    - [Statement](#statement)auto    - [B-tree](#b-tree)auto    - [Pager](#pager)auto- [Core API](#core-api)auto    - [Connecting to a Database](#connecting-to-a-database)auto    - [Executing Prepared Queries](#executing-prepared-queries)auto    - [Using Parameterized SQL](#using-parameterized-sql)auto    - [Executing Wrapped Queries](#executing-wrapped-queries)auto        - [sqlite3_exec()](#sqlite3_exec)auto        - [sqlite3_get_table()](#sqlite3_get_table)autoauto<!-- /TOC -->
-
-
 
 ## Principal Concepts
 
