@@ -5,7 +5,6 @@ date:   2019-03-06 23:37:01 +0800
 categories: [SQLite]
 tags: [SQLite]
 ---
-
 ## Principal Concepts
 
 From a programmer’s point of view, the main things to know about are connections, statements, the B-tree, and the pager.
