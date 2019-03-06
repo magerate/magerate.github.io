@@ -44,7 +44,14 @@ its associated cursor can get to the records inside the page.
 The pager is responsible for reading and writing to and from the database, maintaining a memory cache or pages, and managing transactions. In
 addition to this, it manages locks and crash recovery.
 
-## Executing Prepared Queries
+
+## Core API
+
+### Connecting to a Database
+
+The function used to connect, or open, a database in the C API is sqlite3_open() and is basically just a system call for opening a file.
+
+### Executing Prepared Queries
 
 the prepared query method is the actual process by which SQLite executes all SQL
 commands. Executing a SQL command is a three-step process:
@@ -93,7 +100,7 @@ stmt.finalize()
 db.close()
 ```
 
-## Using Parameterized SQL
+### Using Parameterized SQL
 
 ```
 db = open('foods.db')
@@ -110,9 +117,9 @@ stmt.finalize()
 db.close()
 ```
 
-## Executing Wrapped Queries
+### Executing Wrapped Queries
 
-### sqlite3_exec()
+#### sqlite3_exec()
 
 ```
 db = open('foods.db')
@@ -122,7 +129,7 @@ db.exec("begin; delete from episodes; rollback")
 db.close()
 ```
 
-### sqlite3_get_table()
+#### sqlite3_get_table()
 
 ```
 db = open('foods.db')
