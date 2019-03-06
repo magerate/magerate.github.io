@@ -5,6 +5,19 @@ date:   2019-03-06 23:37:01 +0800
 categories: [SQLite]
 tags: [SQLite]
 ---
+- [Principal Concepts](#principal-concepts)
+  - [Connection](#connection)
+  - [Statement](#statement)
+  - [B-tree](#b-tree)
+  - [Pager](#pager)
+- [Core API](#core-api)
+  - [Connecting to a Database](#connecting-to-a-database)
+  - [Executing Prepared Queries](#executing-prepared-queries)
+  - [Using Parameterized SQL](#using-parameterized-sql)
+  - [Executing Wrapped Queries](#executing-wrapped-queries)
+    - [sqlite3_exec()](#sqlite3exec)
+    - [sqlite3_get_table()](#sqlite3gettable)
+
 ## Principal Concepts
 
 From a programmer’s point of view, the main things to know about are connections, statements, the B-tree, and the pager.
